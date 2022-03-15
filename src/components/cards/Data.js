@@ -10,6 +10,7 @@ const EMI = <BsCashStack />
 const Rubee = <SiBitcoincash />
 const UPI = <img src="/assets/UPI.png" />
 const PayTm = <img src="/assets/PayTm.png" />
+
 const cardData = [
     {
         id: 1,
