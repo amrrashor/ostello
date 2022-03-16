@@ -10,6 +10,7 @@ import CardInputField from './input_fields/card_input_field';
 import UpiInputField from './input_fields/UPI_input_field';
 import PaytmInputField from './input_fields/PayTm_input_field';
 import NetbankingInputField from './input_fields/NetBanking_input_field';
+import MobileWalletField from './input_fields/MobileWallets_input_field';
 
 //caching icons and images
 const Card = <BsCreditCard />
@@ -49,7 +50,7 @@ const cardData = [
         id: 5,
         title: "Mobile Wallets",
         icon: Wallet,
-        input: "input 5"
+        input: <MobileWalletField />
     },
     {
         id: 6,
