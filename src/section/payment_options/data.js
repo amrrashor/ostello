@@ -1,8 +1,17 @@
+//react icons
 import { BsCreditCard, BsCashStack } from 'react-icons/bs';
 import { BiWallet } from 'react-icons/bi';
 import { BsBank2 } from 'react-icons/bs';
 import { SiBitcoincash } from 'react-icons/si';
 
+
+//various input fields
+import CardInputField from './input_fields/card_input_field';
+import UpiInputField from './input_fields/UPI_input_field';
+import PaytmInputField from './input_fields/PayTm_input_field';
+import NetbankingInputField from './input_fields/NetBanking_input_field';
+
+//caching icons and images
 const Card = <BsCreditCard />
 const Wallet = <BiWallet />
 const Banking = <BsBank2 />
@@ -16,25 +25,25 @@ const cardData = [
         id: 1,
         title: "Card",
         icon: Card,
-        input: "input 1"
+        input: <CardInputField />
     },
     {
         id: 2,
         title: "UPI",
         icon: UPI,
-        input: "input 2"
+        input: <UpiInputField />
     },
     {
         id: 3,
         title: "PayTm",
         icon: PayTm,
-        input: "input 3"
+        input: <PaytmInputField />
     },
     {
         id: 4,
         title: "Net Banking",
         icon: Banking,
-        input: "input 4"
+        input: <NetbankingInputField />
     },
     {
         id: 5,
