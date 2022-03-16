@@ -11,6 +11,7 @@ import UpiInputField from './input_fields/UPI_input_field';
 import PaytmInputField from './input_fields/PayTm_input_field';
 import NetbankingInputField from './input_fields/NetBanking_input_field';
 import MobileWalletField from './input_fields/MobileWallets_input_field';
+import EmiInput from './input_fields/EMI_input_field';
 
 //caching icons and images
 const Card = <BsCreditCard />
@@ -56,13 +57,7 @@ const cardData = [
         id: 6,
         title: "EMI",
         icon: EMI,
-        input: "input 6"
-    },
-    {
-        id: 7,
-        title: "No-cost Loan",
-        icon: Rubee,
-        input: "input 7"
+        input: <EmiInput />
     },
 ]
 

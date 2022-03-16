@@ -16,7 +16,7 @@ const CardInputField = () => {
                 </div>
                 <div className="w-full">
                     <div className="text-gray-700 mt-9 mb-4">Security Code</div>
-                    <input type="password" className="rounded-2xl shadow-lg p-6 w-full bg-gray-100 ml-2" />
+                    <input type="password" placeholder="CVV/CVC" className="rounded-2xl shadow-lg p-6 w-full bg-gray-100 ml-2" />
                 </div>
             </div>
 
