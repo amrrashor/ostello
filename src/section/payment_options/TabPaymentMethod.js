@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 //data for both of tabs and input fields.
 import Data from './data'
@@ -15,7 +15,7 @@ const TabPaymentMethod = () => {
 
     return (
         //first column of payment options
-        <div className="hidden md:grid-cols-12 gap-6">
+        <div className="hidden md:grid md:grid-cols-12 gap-6">
             <div className="md:col-span-4">
                 {Data.map(d => (
                     <div onClick={() => handleActive(d.id)}  className={ d.id === active ? "flex px-5 py-5 my-4 rounded-2xl shadow-xl cursor-pointer text-white bg-purple-700 border-2 border-purple-700" : "flex px-5 py-5 my-4 rounded-2xl shadow-xl cursor-pointer hover:text-white hover:bg-purple-700 text-black duration-500 border-2 border-purple-300"}>
