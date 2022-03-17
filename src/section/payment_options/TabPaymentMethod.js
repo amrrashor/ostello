@@ -15,12 +15,12 @@ const TabPaymentMethod = () => {
 
     return (
         //first column of payment options
-        <div className="hidden md:grid md:grid-cols-12 gap-6">
+        <div className="hidden md:grid md:grid-cols-12 gap-5">
             <div className="md:col-span-4">
                 {Data.map(d => (
-                    <div onClick={() => handleActive(d.id)}  className={ d.id === active ? "flex px-5 py-5 my-4 rounded-2xl shadow-xl cursor-pointer text-white bg-purple-700 border-2 border-purple-700" : "flex px-5 py-5 my-4 rounded-2xl shadow-xl cursor-pointer hover:text-white hover:bg-purple-700 text-black duration-500 border-2 border-purple-300"}>
-                        <div className={d.id === active ? "w-11 text-xl mt-1" : "w-11 text-2xl  mt-1 text-purple-700"}>{d.icon}</div>
-                        <div className="ml-5 md:text-2xl text-xl font-medium">{d.title}</div>
+                    <div onClick={() => handleActive(d.id)}  className={ d.id === active ? "flex p-4 my-4 rounded-2xl shadow-xl cursor-pointer text-white bg-purple-700 border-2 border-purple-700" : "flex p-4 my-4 rounded-2xl shadow-xl cursor-pointer hover:text-white hover:bg-purple-700 text-black duration-500 border-2 border-purple-300"}>
+                        <div className={d.id === active ? "w-11 text-xl mt-1" : "w-11 text-xl  mt-1 text-purple-700"}>{d.icon}</div>
+                        <div className="ml-5 md:text-sm lg:text-base font-medium">{d.title}</div>
                     </div>
                 ))}
             </div>
