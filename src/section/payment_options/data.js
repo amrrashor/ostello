@@ -4,7 +4,6 @@ import { BiWallet } from 'react-icons/bi';
 import { BsBank2 } from 'react-icons/bs';
 import { SiBitcoincash } from 'react-icons/si';
 
-
 //various input fields
 import CardInputField from './input_fields/card_input_field';
 import UpiInputField from './input_fields/UPI_input_field';

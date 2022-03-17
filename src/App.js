@@ -10,7 +10,8 @@ import RedeemCard from './components/redeem_card';
 import CouponCard from './components/coupon_card';
 import StatusCard from './components/statusCard';
 import Button from './components/button';
-import PaymentMethod from './section/payment_options';
+import TabPaymentMethod from './section/payment_options/TabPaymentMethod';
+import AccordPaymentMethod from './section/payment_options/AccordionPaymentMethod';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
 
         <div className='grid gap-6 md:grid-cols-12'>
           <div className='md:col-span-12 lg:col-span-8'>
-            <PaymentMethod />
+            <TabPaymentMethod />
+            <AccordPaymentMethod />
           </div>
 
           <div className='md:col-span-12 lg:col-span-4'>
