@@ -1,5 +1,9 @@
-
-
+.title {
+    color: #414141
+}
+.card:hover .title {
+    color: #fff;
+}
 .card:hover .icon {
     color:#fff;
 }
