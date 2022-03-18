@@ -3,10 +3,15 @@
     --color-two: #F4F4F4;
     --color-three: #BDBDBD;
     --color-four: #FAFAFB;
+    --color-five: #7D23E0;
 }
 
 .font-color-one {
     color: var(--color-one);
+}
+
+.font-color-two {
+    color: var(--color-five)
 }
 
 ::placeholder {

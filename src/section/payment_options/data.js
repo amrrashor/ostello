@@ -15,8 +15,8 @@ import EmiInput from './input_fields/EMI_input_field';
 const Card = <BsCreditCard />
 const Wallet = <BiWallet />
 const Banking = <BsBank2 />
-const UPI = <img src="/assets/UPI.png" />
-const PayTm = <img src="/assets/PayTm.png" />
+const UPI = <img src="/assets/UPI.png" className='bg-white rounded' />
+const PayTm = <img src="/assets/PayTm.png"  className='bg-white rounded' />
 const EMI = <BsCashStack className='-rotate-90' />
 
 const cardData = [
