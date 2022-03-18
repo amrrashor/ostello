@@ -13,7 +13,7 @@ const AccordionItem = ({ currentvalue }) => {
                 <h3 className={toggle ? "ml-5 text-white" : "ml-5"}>{currentvalue.title}</h3>
                 <span className={toggle ? "mt-1 text-white ml-auto" : "mt-1 ml-auto"}>{toggle ? <BsChevronUp /> : <BsChevronDown />}</span>
             </div>
-            {toggle && <p className="rounded-2xl shadow-xl">{currentvalue.input}</p>}
+            {toggle && <p className="mb-4">{currentvalue.input}</p>}
         </div>
     )
 }

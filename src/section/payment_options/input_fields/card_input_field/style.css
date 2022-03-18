@@ -4,3 +4,6 @@
 .input-bg {
     background-color:var(--color-two) ;
 }
+input {
+    border-radius: 10px;;
+}

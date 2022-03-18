@@ -8,19 +8,19 @@ const CardInputField = () => {
     return (
         <PaymentCard>
             <div className="font-color-one mb-4">Name on card</div>
-            <input type="text" placeholder="Name on card" className="rounded-2xl p-6 w-full input-bg" />
+            <input type="text" placeholder="Name on card" className="p-5 w-full input-bg" />
 
             <div className="font-color-one mt-9 mb-4">Card Number</div>
-            <input type="number" placeholder="xxxx xxxx xxxx xxxx" className="rounded-2xl p-6 w-full input-bg" />
+            <input type="number" placeholder="xxxx xxxx xxxx xxxx" className="p-6 w-full input-bg" />
 
             <div className="flex flex-col md:flex-row">
                 <div className="w-full">
                     <div className="font-color-one mt-9 mb-4">Expiry Date</div>
-                    <input type="text" placeholder="MM/YY" className="rounded-2xl p-6 w-full input-bg" />
+                    <input type="text" placeholder="MM/YY" className="p-6 w-full input-bg" />
                 </div>
                 <div className="w-full">
                     <div className="font-color-one mt-9 mb-4">Security Code</div>
-                    <input type="password" placeholder="CVV/CVC" className="rounded-2xl p-6 w-full input-bg ml-2" />
+                    <input type="password" placeholder="CVV/CVC" className="p-6 w-full input-bg ml-2" />
                 </div>
             </div>
 
