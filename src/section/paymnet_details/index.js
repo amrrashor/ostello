@@ -1,5 +1,7 @@
 import React from "react";
+
 import CouponCard from "./coupon_card";
+import MoneyDetails from "./money_details";
 import XyzCard from "./product_details";
 import Referral from "./referral_code";
 import './style.css'
@@ -10,6 +12,7 @@ const PaymentDetails = () => {
             <XyzCard />
             <Referral />
             <CouponCard />
+            <MoneyDetails />
         </div>
     )
 }

@@ -7,7 +7,9 @@
     --color-six: #5C5C5C;
     --color-seven: #FFFAEE;
     --color-eight: #3AC817;
-    --color-nine: #EFE5FB
+    --color-nine: #EFE5FB;
+    --color-ten: #A8A8A8;
+    --color-eleven: #E46060;
 }
 
 .font-color-one {
@@ -17,6 +19,7 @@
 .font-color-two {
     color: var(--color-five)
 }
+
 .bg-color-one {
     background-color: var(--color-five);
 }

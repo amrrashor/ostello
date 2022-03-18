@@ -1,0 +1,8 @@
+@import '../../../App.css';
+
+.discount {
+    color: var(--color-eleven)
+}
+.regular {
+    color: var(--color-ten);
+}
