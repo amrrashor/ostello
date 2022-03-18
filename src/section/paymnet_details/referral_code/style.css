@@ -1,0 +1,11 @@
+@import '../../../App.css';
+
+.input-refferal  {
+    border: 2px dashed #EDBA41;
+    background-color: var(--color-seven);
+}
+
+button {
+    border: 1px solid rgba(58, 200, 23, 1);
+    color: var(--color-eight);
+}
