@@ -1,0 +1,14 @@
+:root {
+    --color-one: #414141;
+    --color-two: #F4F4F4;
+    --color-three: #BDBDBD;
+    --color-four: #FAFAFB;
+}
+
+.font-color-one {
+    color: var(--color-one);
+}
+
+::placeholder {
+    color: var(--color-three);
+}
