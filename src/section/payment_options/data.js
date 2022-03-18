@@ -2,7 +2,6 @@
 import { BsCreditCard, BsCashStack } from 'react-icons/bs';
 import { BiWallet } from 'react-icons/bi';
 import { BsBank2 } from 'react-icons/bs';
-import { SiBitcoincash } from 'react-icons/si';
 
 //various input fields
 import CardInputField from './input_fields/card_input_field';
@@ -16,10 +15,9 @@ import EmiInput from './input_fields/EMI_input_field';
 const Card = <BsCreditCard />
 const Wallet = <BiWallet />
 const Banking = <BsBank2 />
-const EMI = <BsCashStack />
-const Rubee = <SiBitcoincash />
 const UPI = <img src="/assets/UPI.png" />
 const PayTm = <img src="/assets/PayTm.png" />
+const EMI = <BsCashStack className='-rotate-90' />
 
 const cardData = [
     {

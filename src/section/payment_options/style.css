@@ -2,8 +2,8 @@
     color: #414141
 }
 .card:hover .title {
-    color: #fff;
+    color: #fff !important;
 }
 .card:hover .icon {
-    color:#fff;
+    color:#fff !important;
 }
