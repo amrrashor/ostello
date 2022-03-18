@@ -21,7 +21,7 @@ const TabPaymentMethod = () => {
         <div className="hidden md:grid md:grid-cols-12 gap-5">
             <div className="md:col-span-4">
                 {Data.map(d => (
-                    <div onClick={() => handleActive(d.id)}  className={ d.id === active ? "card flex p-4 my-4 rounded-2xl shadow-xl cursor-pointer text-white bg-purple-700 border-2 border-purple-700" : "card flex p-4 my-4 rounded-2xl shadow-xl cursor-pointer hover:text-white hover:bg-purple-700 text-black duration-500 border-2 border-purple-300"}>
+                    <div onClick={() => handleActive(d.id)}  className={ d.id === active ? "card flex p-4 my-4 rounded-2xl cursor-pointer text-white bg-color-one border border-purple-300" : "card flex p-4 my-4 rounded-2xl  cursor-pointer hover:text-white  text-black duration-500 border border-purple-300"}>
                         <div className={d.id === active ? "icon w-11 text-xl mt-1 text-white" : "icon w-11 text-xl text-purple-700  mt-1"}>{d.icon}</div>
                         <div className={d.id === active ? "ml-5 md:text-sm lg:text-base font-medium" : "ml-5 md:text-sm lg:text-base font-medium title"}>{d.title}</div>
                     </div>

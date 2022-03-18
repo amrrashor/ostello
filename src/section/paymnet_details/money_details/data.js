@@ -36,7 +36,7 @@ const PurchaseData = [
     {
         id: 6,
         title: "Total",
-        price: "-64,240",
+        price: "64,240",
         icon: Rubee,
     },
 ]

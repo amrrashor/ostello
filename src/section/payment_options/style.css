@@ -1,4 +1,7 @@
 @import '../../App.css';
+.card:hover {
+    background-color: var(--color-five);
+}
 .title {
     color: #414141
 }
