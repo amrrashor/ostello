@@ -9,6 +9,7 @@ import CouponCard from './components/coupon_card';
 import StatusCard from './components/statusCard';
 import Button from './components/button';
 import PaymentOptions from './section/payment_options';
+import PaymentDetails from './section/paymnet_details';
 
 function App() {
   return (
@@ -23,11 +24,7 @@ function App() {
           </div>
 
           <div className='md:col-span-12 lg:col-span-4 '>
-            <XyzCard />
-            <RedeemCard />
-            <CouponCard />
-            <StatusCard />
-            <Button />
+            <PaymentDetails />
           </div>
         </div>
       </div>
