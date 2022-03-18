@@ -8,7 +8,6 @@
     --color-seven: #FFFAEE;
     --color-eight: #3AC817;
     --color-nine: #EFE5FB
-
 }
 
 .font-color-one {
@@ -17,6 +16,9 @@
 
 .font-color-two {
     color: var(--color-five)
+}
+.bg-color-one {
+    background-color: var(--color-five);
 }
 
 .shadow {
