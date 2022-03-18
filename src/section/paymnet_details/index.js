@@ -9,7 +9,7 @@ import './style.css'
 
 const PaymentDetails = () => {
     return (
-        <div>
+        <div className="h-5/6">
             <h3 className="my-2 font-bold font-color-one capitalize md:hidden">order details</h3>
             <XyzCard />
             <Referral />

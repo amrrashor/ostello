@@ -1,5 +1,13 @@
 @import '../../../App.css';
 
 .payment-btn {
-    background-color: #ffff;
+    background-color:transparent;
+}
+
+@media screen and (max-width:768px) {
+    .payment-btn {
+        background-color: #fff;
+        box-shadow: 0px -4px 20px -10px rgba(0, 0, 0, 0.2);
+
+    }
 }
