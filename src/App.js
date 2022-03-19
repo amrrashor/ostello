@@ -4,7 +4,7 @@ import Navbar from './components/navabr/Navbar';
 import './App.css';
 import PaymentOptions from './section/payment_options';
 import PaymentDetails from './section/paymnet_details';
-
+import EmiOptions from './section/payment_options/input_fields/EMI_input_field/EMI_options';
 function App() {
   return (
     <div className='mb-8'>
@@ -22,6 +22,7 @@ function App() {
           </div>
         </div>
       </div>
+      <EmiOptions />
     </div>
   );
 }

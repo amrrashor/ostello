@@ -1,15 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import Data from './data';
 
-const EmiInput = () => {
+
+const EmiInput = () => {    
     return (
-        <div className="rounded-2xl shadow-xl pt-9 px-9 pb-9 overflow-y-scroll h-screen">
+        <div className="rounded-2xl shadow-2 pt-9 px-9 pb-9 overflow-y-scroll md:h-screen">
                 {Data.map(d => (
                     <div>
                         <div>
                             <h3 className="text-gray-800 my-7 text-base">Debit Card EMI</h3>
                             {d.DebitCardEmi.map(dc => (
-                                    <div key={dc.id} className={ dc.active === false ? "select-none flex justify-between w-full p-5 rounded-lg border border-gray-300 my-3" : "flex justify-between w-full p-5 rounded-lg border border-gray-300 my-3"}>
+                                    <div  key={dc.id} className={ dc.active === false ? "select-none flex justify-between w-full p-5 rounded-lg border border-gray-300 my-3" : "flex justify-between w-full p-5 rounded-lg border border-gray-300 my-3"}>
                                         <div className={dc.active === false ? "text-base text-gray-400" : "text-base"}>{dc.title }</div>
                                         <div className={dc.active === false ? "text-gray-400 bg-gray-100 uppercase text-sm  p-2" : "uppercase text-sm text-green-600 bg-green-100 p-2"}>{dc.cost }</div>
                                     </div>
