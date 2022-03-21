@@ -2,7 +2,6 @@ import React from "react";
 import EmiOptions from "./emi_logic";
 import Data from './data';
 import { BsChevronLeft } from 'react-icons/bs';
-
 const EmiAccordion = ({handleActive}) => {
 
     return (

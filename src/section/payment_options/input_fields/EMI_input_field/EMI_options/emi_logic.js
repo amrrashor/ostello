@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './style.css';
-
+import Rubee from '../../../../../assets/Vector.png';
 const EmiOptions = ({currentValue, handleActive}) => {
     const [toggle, setToggle] = useState(false);
 
@@ -20,11 +20,11 @@ const EmiOptions = ({currentValue, handleActive}) => {
                                     <div className="font-color-one text-lg font-medium my-1">{currentValue.four }</div>
                                 </div>
                                 <div>
-                                    <div className="text-base font-medium regular my-1">{currentValue.EMIValue}</div>
-                                    <div className="text-base font-medium regular my-1">{currentValue.interest}</div>
-                                    <div className="font-color-two font-medium text-base my-1">{currentValue.discount}</div>
+                                    <div className="text-base font-medium regular my-1 flex items-center"><img className="w-3 h-3 mr-2" src={Rubee} />{currentValue.EMIValue}</div>
+                                    <div className="text-base font-medium regular my-1 flex items-center"><img className="w-3 h-3 mr-2" src={Rubee} />{currentValue.interest}</div>
+                                    <div className="font-color-two font-medium text-base my-1 flex items-center"><img className="w-3 h-3 mr-2" src={Rubee} />{currentValue.discount}</div>
                                     <div className="divider"></div>
-                                    <div className="font-color-one text-lg font-medium my-1">{currentValue.total}</div>
+                                    <div className="font-color-one text-lg font-medium my-1 flex items-center"><img className="w-3 h-3 mr-2" src={Rubee} />{currentValue.total}</div>
                                 </div>
                         </div>}
                     </div>
