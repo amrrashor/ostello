@@ -1,23 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 import CouponCard from "./coupon_card";
+import AvailableCoupon from "./coupon_card/available_coupons";
 import MoneyDetails from "./money_details";
 import PaymentButton from "./payment_button";
 import XyzCard from "./product_details";
 import Referral from "./referral_code";
 import './style.css'
-
+import Rubee from '../../assets/Vector.png';
 
 const PaymentDetails = () => {
-    const Rubee = <img src="../../assets/vector.png" />
+    const [active, setActive] = useState(false);
+    const handleActive = () => {
+        setActive(!active);
+    }
     return (
         <div className="h-5/6">
             <h3 className="my-2 font-bold font-color-one capitalize md:hidden">order details</h3>
-            <XyzCard />
-            <Referral />
-            <CouponCard />
-            <MoneyDetails />
-            <PaymentButton total={`33 ${Rubee}`} content="complete payment" />
+            {active ? (<AvailableCoupon handleActive={handleActive} />) :
+                (<>
+                    <XyzCard />
+                    <Referral />
+                    <CouponCard handleActive={handleActive} />
+                    <MoneyDetails />
+                </>)}
+            <PaymentButton total={`33`} icon={Rubee} content="complete payment" />
         </div>
     )
 }

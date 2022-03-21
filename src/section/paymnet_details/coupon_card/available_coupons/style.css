@@ -1,0 +1,19 @@
+@import '../../../../App.css';
+
+.enter_coupon {
+    border-bottom: 2px solid #BDBDBD;
+
+}
+h3 {
+    background: rgba(125, 35, 224, 0.1);
+}
+
+.coupon_name {
+    border: 1px dashed #7D23E0;
+    background: rgba(125, 35, 224, 0.1);
+    border-radius:4px;
+}
+
+.subtitle {
+    color: var(--color-15);
+}
