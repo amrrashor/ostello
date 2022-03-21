@@ -1,5 +1,4 @@
-import { CgDollar } from 'react-icons/cg';
-const Rubee = <CgDollar className='inline mr-1 mb-1' />
+const Rubee = <img src='/assets/rubee.svg' className="inline mr-1 mb-1 " />
 
 
 const PurchaseData = [
@@ -7,7 +6,7 @@ const PurchaseData = [
         id: 1,
         title: "Amount",
         price: "64,240",
-        icon: Rubee
+        icon:Rubee,
     },
     {
         id: 2,
