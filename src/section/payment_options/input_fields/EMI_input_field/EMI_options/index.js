@@ -1,16 +1,16 @@
-import React,{useState} from "react";
+import React from "react";
 import EmiOptions from "./emi_logic";
 import Data from './data';
+import { BsChevronLeft } from 'react-icons/bs';
 
 const EmiAccordion = ({handleActive}) => {
-    const [toggle, setToggle] = useState(false);
 
     return (
-        <div className="shadow-2 rounded-3xl p-9 md:h-screen">
+        <div className="shadow-2 rounded-3xl p-9 md:h-screen overflow-y-scroll">
         <div>
-
+            <button onClick={() => handleActive("main")}  className="flex items-center border-0 font-color-one font-medium text-base hover:text-gray-800"><BsChevronLeft className="mr-3"/>Bank</button>
             <div>
-                    <h3 className="font-color-one my-7 text-xl font-medium">No Cost EMI</h3>
+                    <div className="font-color-one my-7 text-xl font-medium">No Cost EMI</div>
                     {
                         Data?.NoCostEmi?.map((item) => (
                             <EmiOptions currentValue={item} handleActive={handleActive}/>
@@ -19,7 +19,7 @@ const EmiAccordion = ({handleActive}) => {
             </div>
 
             <div>
-                <h3 className="font-color-one my-7 text-xl font-medium">EMI with interest</h3>
+                <div className="font-color-one my-7 text-xl font-medium">EMI with interest</div>
                 {
                         Data?.EmiWithInterest?.map((item) => (
                             <EmiOptions currentValue={item}  handleActive={handleActive} />

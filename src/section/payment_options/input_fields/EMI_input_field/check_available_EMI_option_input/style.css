@@ -12,5 +12,8 @@
 
 .check:hover {
     color: var(--color-13);
+}
 
+.input {
+    border: 1px solid #414141
 }

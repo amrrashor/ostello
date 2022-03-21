@@ -3,3 +3,22 @@
 .per {
     color: var(--color-14);
 }
+
+.check {
+    background-color: var(--color-13);
+    border-radius: 8px;;
+}
+
+.check:hover {
+    color: #fff;;
+}
+
+.regular {
+    color: var(--color-ten);
+} 
+.divider {
+    width:100%;
+    background-color: var(--color-16);
+    height:1px;
+    margin: 5px 0;
+}
