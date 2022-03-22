@@ -15,7 +15,7 @@ const PaymentDetails = () => {
         setActive(!active);
     }
     return (
-        <div className="h-5/6">
+        <div className="h-screen">
             <div className="my-2 text-lg font-bold font-color-one capitalize md:hidden">order details</div>
             {active ? (<AvailableCoupon handleActive={handleActive} />) :
                 (<>
