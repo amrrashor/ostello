@@ -1,6 +1,8 @@
 import React from "react";
 import Data from './data';
 import './style.css';
+
+
 const MoneyDetails = () => {
     return (
         <div className="w-full mt-6 radius shadow px-7 py-4">

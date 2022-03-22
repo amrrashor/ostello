@@ -14,7 +14,7 @@ const DropdownPP = ({
         e.preventDefault();
         setSelected(e.target.value);
         setError("");
-    };
+    }
 
     return (
         <div className={`w-full my-4 flex-col space-y-0 ${className}`}>

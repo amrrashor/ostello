@@ -10,13 +10,15 @@ import PaytmInputField from './input_fields/PayTm_input_field';
 import NetbankingInputField from './input_fields/NetBanking_input_field';
 import MobileWalletField from './input_fields/MobileWallets_input_field';
 import EmiInput from './input_fields/EMI_input_field';
+import PayTM from '../../assets/PayTm.svg';
+import Upi from '../../assets/UPI.svg';
 
 //caching icons and images
 const Card = <BsCreditCard />
 const Wallet = <BiWallet />
 const Banking = <BsBank2 />
-const UPI = <img src="/assets/UPI.png" className='bg-white rounded' />
-const PayTm = <img src="/assets/PayTm.png"  className='bg-white rounded' />
+const UPI = <img src={Upi} className='bg-white rounded' />
+const PayTm = <img src={PayTM}  className='bg-white rounded' />
 const EMI = <BsCashStack className='-rotate-90' />
 
 const cardData = [

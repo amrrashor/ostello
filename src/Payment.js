@@ -5,7 +5,7 @@ import './App.css';
 import PaymentOptions from './section/payment_options';
 import PaymentDetails from './section/paymnet_details';
 
-function App() {
+function Payment() {
   return (
     <div className='mb-8'>
       <Navbar />
@@ -23,7 +23,7 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default Payment;

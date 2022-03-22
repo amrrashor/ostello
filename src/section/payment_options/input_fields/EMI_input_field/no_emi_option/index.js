@@ -7,7 +7,7 @@ import Button from '../../../../../components/button/index'
 
 const NoEmi = ({title, number}) => {
     return (
-        <div className="rounded-3xl shadow-2 p-9 md:h-screen w-full">
+        <div className="rounded-3xl shadow-2 p-9 w-full">
             <div className="flex items-center font-color-one capitalize mb-6 font-medium text-lg"> <BsChevronLeft className="mr-4 " /> {title}</div>
             <div className="flex justify-center items-center flex-col">
                 <AiOutlineExclamation className="exclaimation text-2xl" />

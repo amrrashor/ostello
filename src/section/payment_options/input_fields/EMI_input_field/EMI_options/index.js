@@ -5,7 +5,7 @@ import { BsChevronLeft } from 'react-icons/bs';
 const EmiAccordion = ({handleActive}) => {
 
     return (
-        <div className="shadow-2 rounded-3xl p-9 md:h-screen overflow-y-scroll">
+        <div className="shadow-2 rounded-3xl p-7 md:overflow-y-scroll h-screen">
         <div>
             <button onClick={() => handleActive("main")}  className="flex items-center border-0 font-color-one font-medium text-base hover:text-gray-800"><BsChevronLeft className="mr-3"/>Bank</button>
             <div>

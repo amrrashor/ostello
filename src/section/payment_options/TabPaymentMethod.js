@@ -18,7 +18,7 @@ const TabPaymentMethod = () => {
 
     return (
         //first column of payment options
-        <div className="hidden md:grid md:grid-cols-12 gap-5">
+        <div className="hidden md:grid md:grid-cols-12 gap-5 md:h-screen">
             <div className="md:col-span-4">
                 {Data.map(d => (
                     <div onClick={() => handleActive(d.id)}  className={ d.id === active ? "card flex p-4 my-4 rounded-2xl cursor-pointer text-white bg-color-one border border-purple-300" : "card flex p-4 my-4 rounded-2xl  cursor-pointer hover:text-white  text-black duration-500 border border-purple-300"}>
@@ -29,7 +29,7 @@ const TabPaymentMethod = () => {
             </div>
 
         {/* second column which includes various input fields*/}
-            <div className='md:col-span-8'>
+            <div className='md:col-span-8 h-screen'>
                 {Data.map(d => (
                     <div key={d.id} active={active === d.id} className={d.id === active ? "block" : "hidden"}>
                         {d.input}
